@@ -1,0 +1,83 @@
+/* GENERAL */
+
+html,body {
+  height:100%;
+  padding:0;
+  margin:0;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;  
+}
+a {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}
+.wrapper {
+    padding: 0;
+}
+
+/* BG */
+
+.bg-dark,
+#wrapper-footer {
+  background: url(../img/lacotedeboeuf-fond-tableau.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* HEADER */
+
+.navbar-nav {
+  flex: 0 0 100%;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  font-weight: 700;
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+  color: rgba(255,255,255,0.5);
+}
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  color: rgba(191,30,46,1);
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+/* HOMEPAGE */
+
+#homepage-video {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+#homepage-video video {
+  width: 100%;
+  height: calc(100% - 125px);
+}
+#homepage-video:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px; 
+  right: 0px;
+  background: rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+
+#wrapper-footer {
+  font-size: 0.8rem;
+}
+#wrapper-footer,
+#wrapper-footer a {
+  color: rgba(255,255,255,0.5);
+}
+#wrapper-footer a:hover {
+  color: rgba(255,255,255,1);
+}
